@@ -2,7 +2,7 @@
 
 ## **Overview**
 
-This project develops a linear regression model to predict housing prices using a King County-style dataset. The workflow follows a structured data science pipeline, including data preprocessing, exploratory analysis, feature engineering, and model development.
+This project develops a linear regression model to predict housing prices using a King County housing sales dataset. The workflow follows a structured data science pipeline, including data preprocessing, exploratory analysis, feature engineering, and model development.
 
 The final model emphasizes both predictive performance and interpretability, providing insight into the key factors that drive housing prices.
 
@@ -17,19 +17,19 @@ The final model emphasizes both predictive performance and interpretability, pro
 
 ## **Project Structure**
 
-**1_EDA/**
+**1_EDA/** (Jupyter notebook + original dataset)
 - Data cleaning
-- Imputation
+- Missing value imputation
 - Outlier handling
 - Feature engineering
 
-**2_Visualization/**
+**2_Visualization/** (notebook + processed datasets)
 - Data analysis
 - Distributions
 - Correlations
 - Curated visualizations
 
-**3_Model/**
+**3_Model/** (notebook + processed datasets)
 - Model development
 - Evaluation
 - Diagnostics
@@ -75,9 +75,9 @@ Final model selected based on:
 - interpretability
 
 Key predictors include:
-- living space
-- grade and condition
-- house age (nonlinear)
+- structural features (floors, living space)
+- quality features (grade, condition)
+- lifescycle features (house age, nonlinear)
 - lot size
 - amenities (waterfront, view)
 
